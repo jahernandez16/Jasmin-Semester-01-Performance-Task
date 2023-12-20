@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Your-Name-Performance-Task"
+config/name="Jasmin Semester 01 Performance Task"
+run/main_scene="res://world.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 
 [display]
