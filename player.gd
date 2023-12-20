@@ -2,6 +2,9 @@ extends Area2D
 
 var speed = 400
 
+@onready var enemy_hit = $"../enemy_hit"
+@onready var bg_music = $"../bg_music"
+
 func _process(delta):
 	var velocity = Vector2.ZERO
 	
@@ -21,4 +24,6 @@ func _process(delta):
 
 func _on_body_entered(body):
 	hide()
+	enemy_hit.play()
+	bg_music.stop()
 	
